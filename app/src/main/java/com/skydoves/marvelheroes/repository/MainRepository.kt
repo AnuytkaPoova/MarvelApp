@@ -17,7 +17,6 @@
 package com.skydoves.marvelheroes.repository
 
 import androidx.annotation.WorkerThread
-import com.skydoves.marvelheroes.ErrorResponseMapper
 import com.skydoves.marvelheroes.MarvelClient
 import com.skydoves.marvelheroes.Repository
 import com.skydoves.marvelheroes.model.Poster
@@ -25,12 +24,7 @@ import com.skydoves.marvelheroes.persistence.PosterDao
 import com.skydoves.sandwich.ApiResponse
 import com.skydoves.sandwich.ResponseDataSource
 import com.skydoves.sandwich.disposables.CompositeDisposable
-import com.skydoves.sandwich.map
-import com.skydoves.sandwich.message
 import com.skydoves.sandwich.onSuccess
-import com.skydoves.sandwich.suspendOnError
-import com.skydoves.sandwich.suspendOnException
-import com.skydoves.sandwich.suspendOnSuccess
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
